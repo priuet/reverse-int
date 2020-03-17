@@ -1,3 +1,5 @@
-module.exports = function reverse (n) {
-  
+module.exports = function reverse(n) { // функция принимает только числа
+    n = Math.abs(n); // Math.abs() возвращает абсолютное значение числа
+    n = String(n).split('').reverse().join(''); // Разбивает объект String на массив строк, разделёных указанной строкой на подстроки. Потом ставит их в обратном порядке. Потом обьединяет в новую строку без пробелов
+    return Number(n);
 }
